@@ -31,5 +31,5 @@ if (BMI <= 18.5) {
         console.log('You are healthy');
     }
     else if (BMI >= 30) {
-        console.log('You are obese');
+        console.log('You are unhealthy');
     }
