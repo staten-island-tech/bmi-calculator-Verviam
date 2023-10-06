@@ -4,6 +4,10 @@ if (unitSystem === 'i') {
     const username= prompt ('What is your name?');
     const height= prompt('Enter your height in inches');
     const weight= prompt('Enter your weight in lbs');
+    
+    function iFindBMI(height, weight) {
+        return (weight / height ** 2) * 703
+    };
     const BMI = iFindBMI(height, weight);
     console.log('Hi' + ' ' + username + ' ' + 'your BMI is' + ' ' + BMI);
 }
@@ -12,18 +16,13 @@ if (unitSystem === 'i') {
         const username= prompt ('What is your name?');
         const height= prompt('Enter your height in cm');
         const weight= prompt('Enter your weight in kg');
+        function mFindBMI(height, weight) {
+            return (weight / height ** 2) * 10000
+        };
         const BMI = mFindBMI(height, weight);
         console.log('Hi' + ' ' + username + ' ' + 'your BMI is' + ' ' + BMI);
-    
 }
 
-function iFindBMI(height, weight) {
-    return (weight / height ** 2) * 703
-}
-
-function mFindBMI(height, weight) {
-    return (weight / height ** 2) * 10000
-}
 
 if (BMI <= 18.5) {
     console.log('You are underweight');
